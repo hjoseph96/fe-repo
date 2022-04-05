@@ -19,8 +19,9 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false
 set :deploy_to, "/var/www/fe-repo"
-set :master_key_local_path, '/home/godkingherb/Desktop/fe-repo/config/master.key'
 
+set :linked_files, %w{config/master.key}
+set :linked_files, %w{config/credentials/production.key}
 
 namespace :puma do
   desc "Create Directories for Puma Pids and Socket"

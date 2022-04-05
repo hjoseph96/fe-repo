@@ -82,5 +82,3 @@ test:
 production:
   <<: *default
   database: fe_repo_production
-  username: fe_repo
-  password: <%= ENV["FE_REPO_DATABASE_PASSWORD"] %>
