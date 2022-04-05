@@ -73,6 +73,8 @@ group :development do
   gem 'capistrano-yarn'
   gem 'capistrano3-puma'
   gem 'capistrano-rvm'
+  gem 'capistrano-master-key', '~> 1.0.0'
+
   gem 'rvm1-capistrano3', require: false
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]

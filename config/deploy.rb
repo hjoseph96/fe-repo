@@ -19,6 +19,8 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false
 set :deploy_to, "/var/www/fe-repo"
+set :master_key_local_path, '/home/godkingherb/Desktop/fe-repo/config/master.key'
+
 
 namespace :puma do
   desc "Create Directories for Puma Pids and Socket"
@@ -31,6 +33,7 @@ namespace :puma do
 
   before :start, :make_dirs
 end
+
 
 namespace :deploy do
   desc "Make sure local git is in sync with remote."

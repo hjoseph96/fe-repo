@@ -1,5 +1,7 @@
 require "active_support/core_ext/integer/time"
 
+ENV['sercret_key_base'] = '2b3aacaaba08aa69e675adb05d570d90d58e61f453e959cc6bbad9bb5cde3df76480c96ddca03ed024743362501d21075cf361ac1b95752efef53f55935734b5'
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
