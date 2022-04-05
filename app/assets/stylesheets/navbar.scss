@@ -1,0 +1,26 @@
+.navbar.main {
+  background-color: #2B2940;
+
+  img {
+    height: 2.667em;
+    width: auto;
+  }
+
+  .navbar-item, .navbar-link {
+    color: lightblue;
+    background-color: transparent !important;
+
+    &:hover, &:focus {
+      background-color: #222133;
+      color: whitesmoke;
+    }
+
+  }
+
+  .navbar-dropdown {
+    background-color: #2B2940;
+    border-color: #222133;
+    hr { background-color: #222133; }
+
+  }
+}
