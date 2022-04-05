@@ -74,6 +74,8 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano-rvm'
   gem 'capistrano-master-key', '~> 1.0.0'
+  gem 'capistrano-postgresql', '~> 6.2'
+  gem 'sshkit-sudo'
 
   gem 'rvm1-capistrano3', require: false
 

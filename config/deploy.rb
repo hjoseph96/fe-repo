@@ -20,7 +20,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, false
 set :deploy_to, "/var/www/fe-repo"
 
-set :linked_files, %w{config/master.key}
+set :linked_files, %w{config/master.key condig/database.yml}
 set :linked_files, %w{config/credentials/production.key}
 
 namespace :puma do

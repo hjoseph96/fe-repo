@@ -4,6 +4,8 @@ require "capistrano/rails"
 require 'capistrano/rvm'
 require 'capistrano/puma'
 require 'capistrano/master_key'
+require 'capistrano/postgresql'
+require 'sshkit/sudo'
 
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Systemd
