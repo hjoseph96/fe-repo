@@ -1,5 +1,54 @@
 <%= render 'shared/navbar' %>
 
-<div class="content main">
+<div class="container main">
+  <div class="category-sidebar">
 
+    <ul class="category-list">
+      <% @categories.each do |category| %>
+          <li class="<%= "depth-#{category.depth}" %>">
+            <%= link_to category.name, root_path(category_id: category.id) %>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class='browse-section'>
+
+    <% if @current_category.nil? %>
+      <div class="category-previews">
+        <% @categories.each do |category| %>
+            <div class="preview">
+              <h4><%= category.name %></h4>
+
+              <div class="asset-previews">
+                <% preview_assets = category.assets.sample(3) %>
+
+                <% preview_assets.each do |asset| %>
+                  <div class="asset-preview">
+                    <%= image_tag url_for(asset.preview_image) %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+        <% end %>
+      </div>
+    </div>
+
+    <% else%>
+      <div class="category-previews">
+        <% @current_category.assets.each do |asset| %>
+            <div class="preview">
+              <h4><%= asset.title %></h4>
+
+              <div class="asset-previews">
+                <div class="asset-preview">
+                  <%= image_tag url_for(asset.preview_image) %>
+                </div>
+              </div>
+            </div>
+        <% end %>
+      </div>
+
+
+    <% end %>
 </div>

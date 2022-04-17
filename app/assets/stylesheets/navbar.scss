@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .navbar.main {
   background-color: #2B2940;
 
-  img {
+  img.logo {
     height: 2.667em;
     width: auto;
+    zoom: 3;
+    position: relative;
+    top: 3px;
   }
+
+  img.bubble {
+    height:43px;
+    zoom: 2;
+  }
+
+
 
   .navbar-item, .navbar-link {
     color: lightblue;
@@ -23,4 +35,28 @@
     hr { background-color: #222133; }
 
   }
+
+
+  .navbar-center {
+    position: relative;
+    top: 23px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    color: whitesmoke;
+
+    h3 {
+      font-size: 26px;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      text-align: center;
+      letter-spacing: 2.3px;
+    }
+  }
+}
+
+.button.is-light {
+  background-color: #aaa9b3;
+  color: azure;
 }

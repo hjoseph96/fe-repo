@@ -1,7 +1,9 @@
-<nav class="navbar main" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top main" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://bulma.io">
-      <img src="<%= image_url 'feu_logo.png' %>">
+      <img class="logo" src="<%= image_url 'logo.png' %>">
+
+      <img class="bubble" src="<%= image_url 'speechbubble.png' %>">
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -11,41 +13,44 @@
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div class=navbar-center>
+
+  </div>
+
+  <div class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
 
-      <a class="navbar-item">
-        Documentation
-      </a>
+    </div>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
-        </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
-          </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
+    <div class="navbar-center">
+      <h3>Fire Emblem Fangame Essentials</h3>
+      <p>From Everyone, For Everyone</p>
     </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Browse
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Jobs
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
+          </div>
+        </div>
+
         <div class="buttons">
           <a class="button is-primary">
             <strong>Sign up</strong>

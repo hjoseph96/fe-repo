@@ -71,6 +71,8 @@ GEM
     acts_as_votable (0.13.2)
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
+    ancestry (4.1.0)
+      activerecord (>= 5.2.6)
     bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
@@ -106,6 +108,7 @@ GEM
       puma (>= 4.0, < 6.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.10)
+    connection_pool (2.2.5)
     crass (1.0.6)
     cssbundling-rails (1.1.0)
       railties (>= 6.0.0)
@@ -144,7 +147,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
-    msgpack (1.4.5)
+    msgpack (1.5.1)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -226,6 +229,10 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    sidekiq (6.4.1)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.2.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -268,6 +275,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on (~> 9.0)
   acts_as_votable
+  ancestry
   bootsnap
   bullet
   capistrano (~> 3.7)
@@ -292,6 +300,7 @@ DEPENDENCIES
   redis (~> 4.0)
   rvm1-capistrano3
   sassc-rails
+  sidekiq (~> 6.4)
   sprockets-rails
   sshkit-sudo
   stimulus-rails
@@ -300,7 +309,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.7.5p203
 
 BUNDLED WITH
-   2.2.29
+   2.3.11

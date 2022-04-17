@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.2"
+ruby "2.7.5"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
@@ -27,6 +27,8 @@ gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
 
+gem "jsbundling-rails"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -51,6 +53,7 @@ gem "sassc-rails"
 gem 'git'
 gem 'devise'
 gem 'pg_search'
+gem 'ancestry'
 gem 'acts_as_votable'
 gem 'acts-as-taggable-on', '~> 9.0'
 gem 'rake' , '>= 0.9.2'
@@ -85,3 +88,5 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "sidekiq", "~> 6.4"
