@@ -4,5 +4,11 @@
 
 import { application } from "./application"
 
-import HelloController from "./hello_controller"
+import AssetController from "./asset_controller.js"
+application.register("asset", AssetController)
+
+import HelloController from "./hello_controller.js"
 application.register("hello", HelloController)
+
+import Lightbox from 'stimulus-lightbox'
+application.register('lightbox', Lightbox)

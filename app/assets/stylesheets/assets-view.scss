@@ -1,0 +1,39 @@
+.assets-show {
+  .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    img {
+      height: 200px;
+      width: 200px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .container {
+    height: 100vh;
+    margin-top: 100px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;  /* Safari and Chrome */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 3em auto;
+      font-size: 26px;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      font-family: "Bebas Neue";
+      letter-spacing: 0.7px;
+      width: 600px;
+      justify-self: center;
+    }
+  }
+
+
+}

@@ -38,7 +38,9 @@
       <div class="category-previews">
         <% @current_category.assets.each do |asset| %>
             <div class="preview">
-              <h4><%= asset.title %></h4>
+              <%= link_to asset_path(asset) do %>
+                <h4><%= asset.title %></h4>
+              <% end %>
 
               <div class="asset-previews">
                 <div class="asset-preview">

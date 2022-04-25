@@ -12,8 +12,6 @@ item_icons = Category.where(name: 'Maps').first_or_create
 
 portraits = Category.where(name: 'Portraits')
 
-Category.where(name: "Spriting Community OC's (Grouped by Artist)", parent: portraits).first_or_create
-
 spells_n_skills = Category.where(name: 'Spells & Skills', asset_depth: 2).first_or_create
 
 tilesets = Category.where(name: 'Tilesets').first_or_create

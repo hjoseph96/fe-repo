@@ -37,8 +37,10 @@
 // @import "bulma/sass/layout/section.sass";
 
 @import 'bulma/bulma';
+@import "lightgallery/scss/lightgallery";
 @import 'navbar';
 @import 'home';
+@import 'assets-view';
 
 body {
   background:

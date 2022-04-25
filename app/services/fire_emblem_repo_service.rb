@@ -117,7 +117,7 @@ class FireEmblemRepoService
       puts "========== ATTACHING FILE: #{f} =========="
 
       file = File.open("#{path}/#{f}")
-      @asset.files.attach(io: file, filename: name)
+      @asset.files.attach(io: file, filename: f)
     end
 
     @asset.save!

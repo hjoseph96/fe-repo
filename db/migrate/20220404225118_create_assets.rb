@@ -5,6 +5,7 @@ class CreateAssets < ActiveRecord::Migration[7.0]
       t.references :author, foreign_key: true
       t.string :title
       t.jsonb :extras
+      t.string :extension
 
       t.timestamps
     end

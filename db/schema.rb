@@ -54,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_10_215739) do
     t.bigint "author_id"
     t.string "title"
     t.jsonb "extras"
+    t.string "extension"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_assets_on_author_id"

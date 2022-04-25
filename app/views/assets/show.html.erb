@@ -1,0 +1,10 @@
+<%= render 'shared/navbar' %>
+
+<div class="container main">
+  <h1><%= @asset.title %></h1>
+  <div class="images" data-controller="lightbox" data-lightbox-options-value='{"controls": true, "loop":true}'>
+    <% @asset.preview_images(gif_only: @gif_only).each do |image| %>
+      <%= image_tag url_for(image), data: { src: url_for(image) }  %>
+    <%end %>
+  </div>
+</div>
