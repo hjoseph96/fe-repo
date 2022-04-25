@@ -13,7 +13,7 @@ class FireEmblemRepoService
 
   FE_REPO_PATH = "#{Rails.root}/db/repos/FE-Repo"
 
-  FE_REPO_GIT_URL = 'git@github.com:Klokinator/FE-Repo.git'
+  FE_REPO_GIT_URL = 'https://github.com/Klokinator/FE-Repo.git'
 
   CATEGORY_OVERRIDES = {
     'BGs, Interface Elements' => 'Backgrounds & UI',
