@@ -7,4 +7,8 @@
       <%= image_tag url_for(image), data: { src: url_for(image) }  %>
     <%end %>
   </div>
+
+  <div class="download">
+    <a class="button is-primary" href=<%= download_asset_path(@asset) %>>Download</a>
+  </div>
 </div>

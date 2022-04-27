@@ -1,10 +1,10 @@
 class Category < ApplicationRecord
-  has_ancestry
+  has_ancestry cache_depth: true
 
   def self.top_level_categories
     where(ancestry: nil)
   end
-  
+
   def top_level_category
     return self if ancestry.nil?
 

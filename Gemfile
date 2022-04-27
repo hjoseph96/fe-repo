@@ -57,7 +57,7 @@ gem 'ancestry'
 gem 'acts_as_votable'
 gem 'acts-as-taggable-on', '~> 9.0'
 gem 'rake' , '>= 0.9.2'
-gem 'rubyzip'
+gem 'active_storage-send_zip'
 gem 'mimemagic'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

@@ -8,6 +8,14 @@
           <li class="<%= "depth-#{category.depth}" %>">
             <%= link_to category.name, root_path(category_id: category.id) %>
           </li>
+
+          <% if @current_category.try(:id) == category.id || @current_category.try(:descendant_of?, category) %>
+            <% category.descendants.each do |sub_category| %>
+              <li class="<%= "depth-#{sub_category.depth}" %>">
+                <%= link_to sub_category.name, root_path(category_id: sub_category.id) %>
+              </li>
+            <% end %>
+          <% end %>
       <% end %>
     </ul>
   </div>

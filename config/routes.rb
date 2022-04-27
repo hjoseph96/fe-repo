@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
-  resources :assets, only: :show
+  resources :assets, only: :show do
+    member do
+      get 'download'
+    end
+  end
 end

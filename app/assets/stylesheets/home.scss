@@ -50,6 +50,21 @@
           }
         }
 
+        &.depth-1 {
+          background-color: #e6c201;
+          text-align: left;
+          border-top: 2px solid #b39701;
+          font-size: 16px;
+          
+          a {
+            width: 70%;
+            color:  white;
+            &:hover, &:focus {
+              color: #F9DA84;
+            }
+          }
+        }
+
       }
 
     }
