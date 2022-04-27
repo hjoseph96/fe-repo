@@ -10,7 +10,7 @@ item_icons = Category.where(name: 'Item Icons').first_or_create
 item_icons = Category.where(name: 'Maps').first_or_create
 
 
-portraits = Category.where(name: 'Portraits')
+portraits = Category.where(name: 'Portraits').first_or_create
 
 spells_n_skills = Category.where(name: 'Spells & Skills', asset_depth: 2).first_or_create
 
