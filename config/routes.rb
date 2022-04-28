@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   root "home#index"
 
 
-  get 'files/:id', to: 'assets#show', as: :asset_path
+  get 'files/:id', to: 'assets#show', as: :asset
   get 'files/:id/download', to: 'assets#download', as: :download_asset
 end
