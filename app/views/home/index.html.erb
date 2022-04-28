@@ -11,7 +11,7 @@
 
           <% if @current_category.try(:id) == category.id || @current_category.try(:descendant_of?, category) %>
             <% category.descendants.each do |sub_category| %>
-              <li class="<%= "depth-#{sub_category.depth}" %>">
+              <li class="<%= "depth-#{sub_category.depth} #{'selected' if @current_category.id == sub_category.id}"  %>">
                 <%= link_to sub_category.name, root_path(category_id: sub_category.id) %>
               </li>
             <% end %>
